@@ -2,12 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <!-- Адаптивность для мобильных устройств -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Моя персональная страница</title>
+  <title>Ivan Makhambetov</title>
 
   <style>
-    /* Сброс базовых отступов */
     * {
       margin: 0;
       padding: 0;
@@ -29,13 +27,11 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    /* Короткая приветственная речь */
     .intro {
       margin-bottom: 1.5rem;
       line-height: 1.6;
     }
 
-    /* Общий контейнер для фото и ссылок */
     .content {
       display: flex;
       justify-content: space-between;
@@ -43,7 +39,6 @@
       gap: 1rem;
     }
 
-    /* Блок с ссылками */
     .links {
       flex: 1;
       display: flex;
@@ -62,7 +57,6 @@
       color: #1565c0;
     }
 
-    /* Блок с фотографией */
     .photo-container {
       flex: 1;
       text-align: center;
@@ -74,13 +68,11 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    /* Адаптивность для мобильных устройств */
     @media (max-width: 600px) {
       .content {
         flex-direction: column;
         align-items: center;
       }
-      /* Сначала фото, потом ссылки */
       .photo-container {
         order: 1;
         margin-bottom: 1.5rem;
@@ -96,33 +88,26 @@
   </style>
 </head>
 <body>
-
   <main>
     <div class="intro">
-      <!-- Короткая приветственная речь на английском (2-3 предложения) -->
-      <p>Hello! My name is John and I’m passionate about crafting elegant solutions to complex problems. 
-      I love learning new technologies and collaborating with diverse teams to build great products.</p>
+      <p>Welcome to my personal webpage! I'm Ivan Makhambetov, a passionate Golang Developer 
+        with over 7 years of experience building scalable and efficient backend systems. 
+        Explore my journey, projects, and expertise, and feel free to connect if you'd like 
+        to collaborate or learn more about my work.</p>
     </div>
-
     <div class="content">
-
-      <!-- Ссылки слева -->
       <div class="links">
-        <a href="#" target="_blank">Мое резюме на английском языке (Google Drive)</a>
-        <a href="#" target="_blank">Мое резюме на русском языке (Google Drive)</a>
-        <a href="#" target="_blank">HTML-страница с моим резюме</a>
+        <a href="#" target="_blank">CV (ENG)</a>
+        <a href="#" target="_blank">CV (RUS)</a>
+        <a href="#" target="_blank">CV page</a>
       </div>
-
-      <!-- Фото справа -->
       <div class="photo-container">
         <img
           src="https://media.licdn.com/dms/image/v2/D4D03AQGiVLt8D4-Fiw/profile-displayphoto-shrink_400_400/B4DZRWF.cfHkAg-/0/1736611196452?e=1742428800&v=beta&t=I2tk3qeq4bOKJkPXq1U2zZ7ZsbvA_-6ek-jBskzRH5s"
           alt="My Photo"
         />
       </div>
-      
     </div>
   </main>
-
 </body>
 </html>
