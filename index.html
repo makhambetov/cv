@@ -27,29 +27,60 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .intro {
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.8;
       margin-bottom: 1.5rem;
-      line-height: 1.6;
     }
 
     .content {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 1.5rem;
+    }
+
+    .photo-container {
+      flex: 1;
+      text-align: center; /* Center image in its container */
+    }
+
+    .photo-container img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .links {
       flex: 1;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       gap: 1rem;
+    }
+
+    .links ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .links ul li {
+      margin: 0.5rem 0;
     }
 
     .links a {
       color: #1a73e8;
       text-decoration: none;
       transition: color 0.3s ease;
+      font-size: 1rem;
     }
 
     .links a:hover {
@@ -57,59 +88,64 @@
       color: #1565c0;
     }
 
-    .photo-container {
-      flex: 1;
-      text-align: center;
-    }
-
-    .photo-container img {
-      max-width: 180px;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
     @media (max-width: 600px) {
       .content {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Align content in the center on small screens */
       }
+
       .photo-container {
-        order: 1;
+        order: 1; /* Photo comes first */
         margin-bottom: 1.5rem;
       }
+
       .links {
-        order: 2;
+        order: 2; /* Links follow */
         align-items: center;
       }
-      .links a {
+      .links ul li {
         text-align: center;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <div class="intro">
-      <p>Welcome to my personal webpage! 
-        
-        I'm Ivan Makhambetov, a passionate Golang Developer 
-        with over 7 years of experience building scalable and efficient backend systems. 
-        Explore my journey, projects, and expertise, and feel free to connect if you'd like 
-        to collaborate or learn more about my work.</p>
+<main>
+  <!-- Title -->
+  <h1>Welcome to My Personal Homepage</h1>
+
+  <!-- Intro Section -->
+  <div class="intro">
+    <p>
+      Hello! I'm <span class="highlight">Ivan Makhambetov</span>, a passionate
+      <span class="highlight">Golang Developer</span> with over <span class="highlight">7 years</span> of experience building scalable and efficient backend systems.
+    </p>
+    <p>
+      Here, you'll find an overview of my journey, past projects, and professional expertise.
+      Feel free to explore and connect if you’re looking to <span class="highlight">collaborate</span>
+      or just want to learn more about my work.
+    </p>
+  </div>
+
+  <!-- Content with Photo on Left and Links on Right -->
+  <div class="content">
+    <!-- Profile Photo -->
+    <div class="photo-container">
+      <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQGiVLt8D4-Fiw/profile-displayphoto-shrink_400_400/B4DZRWF.cfHkAg-/0/1736611196452?e=1742428800&v=beta&t=I2tk3qeq4bOKJkPXq1U2zZ7ZsbvA_-6ek-jBskzRH5s"
+              alt="Ivan Makhambetov"
+      />
     </div>
-    <div class="content">
-      <div class="links">
-        <a href="https://drive.google.com/file/d/1vEjnFmB9h5keMrtP8A6RrAvwOqCuOqt4/view?usp=sharing" target="_blank">Resume (ENG)</a>
-        <!--<a href="#" target="_blank">Resume (RUS)</a>-->
-        <!--<a href="cv">CV page</a>*-->
-      </div>
-      <div class="photo-container">
-        <img
-          src="https://media.licdn.com/dms/image/v2/D4D03AQGiVLt8D4-Fiw/profile-displayphoto-shrink_400_400/B4DZRWF.cfHkAg-/0/1736611196452?e=1742428800&v=beta&t=I2tk3qeq4bOKJkPXq1U2zZ7ZsbvA_-6ek-jBskzRH5s"
-          alt="My Photo"
-        />
-      </div>
+
+    <!-- Link Section -->
+    <div class="links">
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1vEjnFmB9h5keMrtP8A6RrAvwOqCuOqt4/view?usp=sharing" target="_blank">Resume (ENG)</a></li>
+        <!--<li><a href="#" target="_blank">Resume (RUS)</a></li>-->
+        <!--<li><a href="cv" target="_blank">CV Page</a></li>-->
+      </ul>
     </div>
-  </main>
+  </div>
+</main>
 </body>
 </html>
