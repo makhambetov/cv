@@ -24,6 +24,15 @@
         h1, h2, h3 {
             color: #444;
         }
+        .headings {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            color: #21409a;
+            font-style: italic;
+        }
+        hr {
+            margin-top: 0;
+        }
         .contact-info {
             font-size: 0.9em;
             margin-bottom: 20px;
@@ -53,92 +62,105 @@
         </header>
 
         <section class="section">
-            <h2>Summary</h2>
-            <p>A backend developer with over 7 years of experience, specializing in Golang and microservice architecture. I’ve built scalable, high-performance systems, including services with 100,000+ active users and 50,000 daily transactions. My expertise includes integrating payment systems and supporting critical infrastructure. As a team lead, I’ve guided developers using Agile practices to deliver projects on time.</p>
+            <h3 class="headings">Summary</h3>
+            <hr>
+            <p>Backend developer with 7+ years of experience, specializing in Golang development and microservice architecture. Built scalable, high-performance systems, including services with 100,000+ active users and 50,000 daily transactions. My expertise includes integrating payment systems and supporting critical infrastructure.</p>
+            <p>As a team lead, I’ve guided developers using Agile practices to deliver projects on time.</p>
         </section>
 
         <section class="section">
-            <h2>Technical Proficiencies</h2>
+            <h3 class="headings">Technical Proficiencies</h3>
+            <hr>
             <ul>
-                <li><strong>Backend / Frontend:</strong> Golang, PHP, Javascript, HTML, CSS</li>
+                <li><strong>Backend / Frontend:</strong> Golang, PHP, Javascript, HTML, CSS, concurrency, gRPC, unit testing</li>
                 <li><strong>Architecture:</strong> Microservices, RESTful API, DDD, EDA, API Gateway, OAuth</li>
                 <li><strong>Databases:</strong> PostgresSQL, MySQL, Tarantool, Redis, InfluxDB</li>
-                <li><strong>DevOps & Infrastructure:</strong> Docker, Kubernetes, Linux, Elasticsearch, Grafana, CI/CD, RabbitMQ, Nginx</li>
+                <li><strong>Monitoring:</strong> Loki, Jaeger, Grafana</li>
+                <li><strong>DevOps & Infrastructure:</strong> Docker, Kubernetes, Linux, Elasticsearch, CI/CD, RabbitMQ, Nginx</li>
             </ul>
         </section>
 
         <section class="section">
-            <h2>Professional Experience</h2>
+            <h3 class="headings">Languages</h3>
+            <hr>
+                <strong>Russian, Kazakh</strong> — Native &nbsp; &nbsp; &nbsp;|   &nbsp; &nbsp; &nbsp;   <strong>English, Italian</strong> — Intermediate (B1)
 
-            <h3>Senior Golang Developer – ChocoFamily Holding (May 2022 — Present)</h3>
+            <p>Proficient in reading and writing technical documentation in English</p>
+        </section>
+
+        <section class="section">
+            <h3 class="headings">Professional Experience</h3>
+            <hr>
+            <p><strong>ChocoFamily Holding.</strong> Almaty, Kazakhstan</p>
+            <p>ChocoFamily is Kazakhstan's largest IT holding company, founded in 2011. It includes a diverse ecosystem of online services.</p>
+            <p><u>Senior Golang Developer</u> – May 2022 — Present</p>
+            <b>Project:</b>  Chocoapp – Ecosystem Core Team
             <ul>
-                <li>Development of backend services providing API endpoints for Chocoapp mobile platform.</li>
+                <li>Developed core backend services, delivering API endpoints for the Chocoapp mobile platform.</li>
                 <li>Built and maintained microservices for payment processing, authentication services, and API gateway.</li>
-                <li>Collaborated with mobile developers and DevOps teams to ensure seamless app integration.</li>
             </ul>
             <p><strong>Key Achievements:</strong></p>
             <ul>
                 <li>Refactored and migrated legacy services to Golang, improving time-to-market for development and minimizing error rates.</li>
-                <li>Integrated multiple external payment providers to enhance transaction reliability, achieving a high SLA of up to 98% successful transactions.</li>
-                <li>Set up monitoring for the system's business metrics, enhancing operational visibility and enabling faster issue resolution.</li>
+                <li>Integrated multiple external payment providers, boosting transaction reliability and increasing SLA from 70% to 98%.</li>
+                <li>Established monitoring for the system's business metrics, improving operational visibility and enabling faster issue resolution.</li>
             </ul>
 
-            <h3>Backend Team Lead – ChocoFamily Holding (March 2020 — May 2022)</h3>
+            <p><u>Backend Team Lead</u>  –  March 2020 — May 2022</p>
+            <b>Project:</b>  Rahmetpp – Mobile payment and loyalty platform
             <ul>
-                <li>Led a team of 3 developers, promoting Agile methods and ensuring project delivery on time.</li>
-                <li>Collaborated with mobile developers and DevOps teams to ensure seamless app integration.</li>
-                <li>Contributed to the Kubernetes migration, supporting DevOps efforts in scaling and deployment.</li>
+                <li>Led a team of 3 developers as a Team Lead, promoting Agile methods and ensuring project delivery.</li>
+                <li>Designed and implemented backend solutions</li>
+                <li>Coordinated with cross-functional teams, including mobile and DevOps</li>
             </ul>
             <p><strong>Key Achievements:</strong></p>
             <ul>
                 <li>Built services for Rahmetpp with over 100K active users, processing up to 50k transactions daily.</li>
-                <li>Mentored new employees and trained interns, fostering their professional growth.</li>
+                <li>Led the hiring process for backend developers, conducting technical interviews and candidate evaluations. Successfully onboarded at least 5 new team members.</li>
+                <li>Mentored new employees and trained interns, supporting their professional growth.</li>
                 <li>Made business-technical decisions that enhanced system efficiency and aligned development efforts with business objectives.</li>
             </ul>
 
-            <h3>Middle Backend Developer – ChocoFamily Holding (August 2018 — March 2020)</h3>
+            <p><u>Middle Backend Developer</u> –  August 2018 — March 2020</p>
+            <b>Project:</b>  Rahmetpp – Mobile payment and loyalty platform
             <ul>
-                <li>Developed UI for the admin panel, streamlining merchant onboarding and analytics.</li>
+                <li>Developed service architecture and designed API interactions.</li>
                 <li>Collaborated with mobile developers and DevOps teams to ensure seamless app integration.</li>
                 <li>Contributed to the Kubernetes migration, supporting DevOps efforts in scaling and deployment.</li>
             </ul>
             <p><strong>Key Achievements:</strong></p>
             <ul>
-                <li>Developed a dynamic cashback system that adapts based on user payment history, increasing user engagement and retention.</li>
-                <li>Developed a data collection platform streamlining data aggregation and analysis processes.</li>
+                <li>Developed a dynamic cashback system that adapts based on user payment history, resulting in 15% growth in transaction volume over six months</li>
+                <li>Designed and implemented a data collection platform using Event-Driven Architecture, resulting reduction in query latency.</li>
             </ul>
 
-            <h3>Intern / Junior PHP Developer – Mitwork (June 2017 – August 2018)</h3>
+            <hr>
+
+            <p><strong>Mitwork</strong>  – June 2017 – August 2018. Almaty, Kazakhstan</p>
+            <p><u>Intern / Junior PHP Developer</u></p>
+            <p>Mitwork is a leading procurement operator for the quasi-public sector, providing procurement systems for the largest national and commercial enterprises.</p>
             <ul>
-                <li>Began as an intern and progressed to full-stack development.</li>
                 <li>Developed and maintained UI components for the trading platform.</li>
                 <li>Implemented new features to enhance platform functionality and user experience.</li>
             </ul>
             <p><strong>Key Achievements:</strong></p>
             <ul>
-                <li>Built a classification system from scratch for CRM integration, improving data accuracy and operational efficiency.</li>
-                <li>Integrated Google Charts for enhanced data visualization, providing an intuitive interface and enabling quick data-driven decisions.</li>
+                <li>Created a classification system for CRM integration, which allowed the removal of manual data processing and reduced data entering errors by 99%</li>
+                <li>Integrated Google Charts for advanced data visualization, offering an intuitive and interactive interface that extended users' time on the platform</li>
+                <li>Began as an intern and was promoted to full-stack Junior Developer.</li>
             </ul>
         </section>
 
         <section class="section">
-            <h2>Education</h2>
+            <h3 class="headings">Education</h3>
+            <hr>
             <ul>
                 <li>2016 – 2017 — Software development. STEP Computer Academy, Kazakhstan branch, Almaty (itstep.org)</li>
                 <li>2019 — Go Bootcamp: Master Golang (Udemy)</li>
-                <li>2023 — Go concurrency (stepik.org)</li>
+                <li>2023 — Concurrency in Go (stepik.org)</li>
                 <li>2024 — Go Event-Driven (Three Dots Labs Academy)</li>
             </ul>
         </section>
-
-        <section class="section">
-            <h2>Languages</h2>
-            <ul>
-                <li><strong>Russian, Kazakh:</strong> Native</li>
-                <li><strong>English:</strong> Intermediate</li>
-                <li><strong>Italian:</strong> Intermediate</li>
-            </ul>
-</section>
     </div>
 </body>
 </html>
