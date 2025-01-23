@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,15 +49,15 @@
     }
 
     .photo-container {
-      flex: 1;
-      text-align: center; /* Center image in its container */
+      float: left;
+      text-align: center;
+      margin-right: 10px;
     }
 
     .photo-container img {
-      max-width: 180px;
+      max-width: 300px;
       width: 100%;
       height: auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .links {
@@ -92,16 +92,16 @@
     @media (max-width: 600px) {
       .content {
         flex-direction: column;
-        align-items: center; /* Align content in the center on small screens */
+        align-items: center;
       }
 
       .photo-container {
-        order: 1; /* Photo comes first */
+        order: 1;
         margin-bottom: 1.5rem;
       }
 
       .links {
-        order: 2; /* Links follow */
+        order: 2;
         align-items: center;
       }
       .links ul li {
@@ -112,13 +112,16 @@
 </head>
 <body>
 <main>
-  <h1>Welcome to My Personal Page</h1>
-
   <div class="intro">
     <p>
-      Hello! I'm <span class="highlight">Ivan Makhambetov</span>, a passionate
-      <span class="highlight">Golang Developer</span> with over <span class="highlight">7 years</span> of experience building scalable and efficient backend systems.
+      Hello! I'm <span class="highlight">Ivan</span>, a <span class="highlight">software engineer</span> based in Kazakhstan. Over the past 7 years I am building a backend systems.
     </p>
+  </div>
+
+  <div class="content">
+    <div class="photo-container">
+      <img src="me.jpg" alt="Ivan Makhambetov" />
+    </div>
     <p>
       Here, you'll find an overview of my journey, past projects, and professional expertise.
       Feel free to explore and connect if you’re looking to <span class="highlight">collaborate</span>
@@ -127,14 +130,10 @@
   </div>
 
   <div class="content">
-    <div class="photo-container">
-      <img src="me.jpg" alt="Ivan Makhambetov" />
-    </div>
-
     <div class="links">
       <ul>
         <li><a href="https://drive.google.com/file/d/1vEjnFmB9h5keMrtP8A6RrAvwOqCuOqt4/view?usp=sharing" target="_blank">Resume (PDF)</a></li>
-        <li><a href="cv.html">Resume (HTML)</a></li>
+        <li><a href="cv">Resume (HTML)</a></li>
       </ul>
     </div>
   </div>
